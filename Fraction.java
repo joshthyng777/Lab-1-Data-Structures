@@ -1,5 +1,5 @@
 // Fraction
-public class Fraction implements INumber<Object> {
+public class Fraction implements INumber<Object>, Comparable<Fraction> {
     int numerator;
     int denominator;
 
@@ -23,6 +23,33 @@ public class Fraction implements INumber<Object> {
         }
 
     }
+    public static void main(String[] args) {
+		Fraction[] fractionArray = new Fraction[100];
+		for(int i=0; i<fractionArray.length; i++)
+		fractionArray[i] = new Fraction(i, i+1);
+		
+		printReverse(fractionArray);
+	}
+	/**
+	 * @author Jonah Kastelic 
+	 * printReverse return value: Prints a reversed array of fractions
+	 * @param inputArray an array of Fraction objects to be reversed
+	 */
+	static void printReverse(Fraction[] inputArray) {
+		for (int i = inputArray.length - 1; i >= 0; i--) {
+			System.out.print(inputArray[i].toString());
+		}
+	}
+	
+	/**
+	 * @author Jonah Kastelic
+	 * toString method which allows for Fractions to be easily printed
+	 * @return String of numerators and denominators
+	 */
+	public String toString() {
+		return " (" + numerator + "," + denominator + ") ";
+	}
+}
 
     @Override
     /**
@@ -82,5 +109,10 @@ public class Fraction implements INumber<Object> {
     public void print() {
         // TODO Auto-generated method stub
 
+    }
+
+    @Override
+    public int compareTo(Fraction o) {
+        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
     }
 }
