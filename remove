@@ -1,0 +1,10 @@
+/* Gabrielle Akers
+     * September 13, 2023
+     */
+    public Fraction remove (Fraction input) {
+        for(int i = 0; i < elements.size(), i++) {
+            if(elements.get(i) == input) {
+                elements.remove(input);
+            }
+        }
+    }
