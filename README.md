@@ -8,7 +8,7 @@ Ellis: boolean add `(Fraction input)`
 
 Gabrielle: Fraction remove `(Fraction input);`
 
-Josh: boolean contains `(Fraction input);`
+Josh: boolean contains `(Fraction input);` - **Finished**
 
 ## Lab Members
 **Josh, Jonah, Gabrielle, Ellis**
