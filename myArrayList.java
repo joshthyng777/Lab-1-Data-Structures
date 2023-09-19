@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class myArrayList<T> {
     private static final int INITIAL_CAPACITY = 50;
     private static final double GROWTH_FACTOR = 1.2;
@@ -22,5 +24,16 @@ public class myArrayList<T> {
         }
         return false;
     }
-
+    /* Gabrielle Akers
+     * September 13, 2023
+     */
+    public ArrayList<Fraction> remove (Fraction input) {
+        ArrayList<Fraction> fractions = new ArrayList<>();
+        for(int i = 0; i < elements.length; i++) {
+            if(elements[i] != input) {
+                fractions.add(input);
+            }
+        }
+        return fractions;
+    }
 }
