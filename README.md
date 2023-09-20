@@ -4,9 +4,9 @@ Roles each lab member has
 
 Jonah: Make the ArrayList class and make sure it has an initial capacity of 50 and growth policy of 20%
 
-Ellis: boolean add `(Fraction input)`
+Ellis: boolean add `(Fraction input)` - **Finished**
 
-Gabrielle: Fraction remove `(Fraction input);`
+Gabrielle: Fraction remove `(Fraction input);` -**Finished**
 
 Josh: boolean contains `(Fraction input);` - **Finished**
 
